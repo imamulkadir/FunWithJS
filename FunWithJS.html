@@ -12,15 +12,15 @@
     <div class="container">
         <div class="bg">
             <div class="navbar" id="navBar">
-                <a href="#home">Home</a>
-                <a href="#service">Service</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
+                <a href="#home">NavItem 1</a>
+                <a href="#service">NavItem 2</a>
+                <a href="#about">NavItem 3</a>
+                <a href="#contact">NavItem 4</a>
             </div>
         </div>
         <h1>SCROLL DOWN TO SEE THE COLOR OF NAVBAR CHANGING FROM WHITE TO GREEN</h1>
         <hr>
-        <h2 id="home">HOME</h2>
+        <h2 id="home">NavItem 1</h2>
         <h3>Copy Cut Paste</h3>
 
         <!-- Copy starts here -->
@@ -45,80 +45,20 @@
         <!-- Paste ends here -->
         
         <hr>
-        <h2 id="service">Service</h2>
+        <h2 id="service">NavItem 2</h2>
        
 
         <hr>
-        <h2 id="about">About</h2>
+        <h2 id="about">NavItem 3</h2>
         
 
         <hr>
-        <h2 id="contact">Contact</h2>
+        <h2 id="contact">NavItem 4</h2>
        
     </div>
 
     
 
-    <script>
-        window.onscroll = () => {scrollNavbar()};
-        scrollNavbar = () => {
-            var navBar = document.getElementById("navBar");
-
-            if(document.documentElement.scrollTop > 100) {
-                navBar.classList.add("after-scroll-navbar");
-            }
-            else {
-                navBar.classList.remove("after-scroll-navbar");
-            }
-        }
-
-        // Copy starts here
-        function jsCopy() {
-            // Get text from field
-            var copyText = document.getElementById("copy").value;
-
-            // Put text into clipboard
-            navigator.clipboard.writeText(copyText)
-            if(copyText){
-                alert("Text copied!");
-            }
-            else {
-                alert("Unable to copy text!");
-            }
-            
-        }   
-        // Copy ends here
-        
-        // Cut starts here
-        function jsCut() {
-            // Get text from field
-            var cutText = document.getElementById("cut").value;
-
-            // Put text into clipboard
-            navigator.clipboard.writeText(cutText)
-            if(cutText){
-                document.getElementById("cut").value = "";
-                alert("Text cutted!");
-            }
-            else {
-                alert("Unable to cut text!");
-            }
-            
-        } 
-        // Cut ends here
-
-        // Paste starts here
-        function jsPaste() {
-            // Get text from clipboard
-            navigator.clipboard.readText()
-
-            .then(
-                clipText => (document.getElementById("paste").value = clipText)
-            );
-
-           
-        }
-        // Paste ends here
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>
