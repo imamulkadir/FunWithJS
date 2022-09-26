@@ -165,3 +165,9 @@ hr {
    font-size: 1.5rem;
    color: white;
 }
+
+.activeNavbar {
+   background-color: red !important;
+   color: aliceblue;
+   padding: 10px 20px;
+}

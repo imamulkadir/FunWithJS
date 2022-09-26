@@ -125,3 +125,28 @@ window.onscroll = () => {scrollNavbar()};
 
             document.body.style.backgroundColor = inputColor;
         })
+
+
+        // Navbar active menu
+        
+        function myFunction(id){
+            // Getting id of navbar items
+            var item = document.getElementById(id);
+            // Giving the items active class
+            item.classList.add("activeNavbar");
+
+            // Selecting all the navbar a elements
+            var prod = document.querySelectorAll('a');
+
+            // Removing active class if prod id and link id does not match
+            prod.forEach(function(prod){
+                if(prod.id != id){
+                    prod.classList.remove("activeNavbar");
+                }
+            })
+        }
+                
+            
+        
+        
+
