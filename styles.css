@@ -107,7 +107,7 @@ input {
    color: black;
 }
 
-.lights {
+.lights, .shp, .imageSlider {
    text-align: center;
 }
 
@@ -206,4 +206,26 @@ input {
    padding: 15px;
    border-radius: 10px;
    cursor: pointer;
+}
+
+
+span {
+   font-size: 20px;
+   margin-left: 5px;
+}
+
+.imgslider {
+   width: 50%;
+   height: 50%;
+}
+
+
+.modal {
+   width: 500px;
+   height: 400px;
+   background-color: darkblue;
+   color: white;
+   border-radius: 10px;
+   box-shadow: 5px 4px 10px black;
+   
 }

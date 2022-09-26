@@ -151,11 +151,12 @@ window.onscroll = () => {scrollNavbar()};
         var carImg = document.getElementById("carImg");
         var startBtn = document.getElementById("start");
         var stoptBtn = document.getElementById("stop");
+        var carStart;
 
         var m = 0;
-
+        // Start car
         startBtn.addEventListener('click', function(){
-            var carStart = setInterval(run, 10);
+            carStart = setInterval(run, 10);
 
             function run() {
                 // 1screen.width
@@ -170,7 +171,47 @@ window.onscroll = () => {scrollNavbar()};
             }
         })
 
-            
+        // Stop car
+        stoptBtn.addEventListener('click', function(){
+            clearInterval(carStart);
+        })
+
+
+        // Show Password
+        var pass = document.getElementById("password");
+        function myPass() {
+            // Getting password input fields type which is password
+            if(pass.type == "password") {
+                // Changin password fields input type to text
+                pass.type = "text";
+            }
+            else {
+                // Changin password fields input type to password
+                pass.type = "password";
+            }
+        }
+
+        // Image Slider
+        var image = ['lux1.jpg','lux2.jpg','lux3.jpg','lux4.jpg','lux5.jpg'];
+       
+        var my_img = document.getElementById("myImage");
+        var count_index = -1;
+
+        function setSlide(){
+            count_index++;
+            console.log(count_index);
+            if(count_index >= image.length){
+                count_index = 0;
+                my_img.src = "./images/slider/"+image[count_index];
+            }
+            else{
+                my_img.src = "./images/slider/"+image[count_index];
+            }
+            setTimeout("setSlide()", 2000);
+        }
+        Window.onload = setSlide();
+
+    
         
         
 

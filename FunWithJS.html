@@ -1,114 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FUN w/ JS</title>
 
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="bg">
-            <div class="navbar" id="navBar">
-                <a href="#navitem1" id="link1" onclick="myFunction(this.id)" >NavItem 1</a>
-                <a href="#navitem2" id="link2" onclick="myFunction(this.id)">NavItem 2</a>
-                <a href="#navitem3" id="link3" onclick="myFunction(this.id)">NavItem 3</a>
-                <a href="#navitem4" id="link4" onclick="myFunction(this.id)">NavItem 4</a>
-                <a href="#navitem5" id="link5" onclick="myFunction(this.id)">NavItem 5</a>
-            </div>
+      <div class="bg">
+        <div class="navbar" id="navBar">
+          <a href="#navitem1" id="link1" onclick="myFunction(this.id)"
+            >NavItem 1</a
+          >
+          <a href="#navitem2" id="link2" onclick="myFunction(this.id)"
+            >NavItem 2</a
+          >
+          <a href="#navitem3" id="link3" onclick="myFunction(this.id)"
+            >NavItem 3</a
+          >
+          <a href="#navitem4" id="link4" onclick="myFunction(this.id)"
+            >NavItem 4</a
+          >
+          <a href="#navitem5" id="link5" onclick="myFunction(this.id)"
+            >NavItem 5</a
+          >
         </div>
-        <h1>SCROLL DOWN TO SEE THE COLOR OF NAVBAR CHANGING FROM WHITE TO GREEN</h1>
-        
-    
+      </div>
+      <h1>
+        SCROLL DOWN TO SEE THE COLOR OF NAVBAR CHANGING FROM WHITE TO GREEN
+      </h1>
 
-        <h2 id="navitem1">NavItem 1</h2>
-        <h3>Copy Cut Paste</h3>
-        <div class="copycutpaste">
-            <!-- Copy starts here -->
-            <div class="copy">
-                <input type="text" name="" id="copy" value="Click to copy this text">
-                <button id="copybtn" onclick="jsCopy()">Copy</button>
-            </div>
-            <!-- Copy ends here -->
-            
-            <!-- Cut starts here -->
-            <div class="cut">
-                <input type="text" name="" id="cut" value="Click to cut this text">
-                <button id="cutbtn" onclick="jsCut()">Cut</button>
-            </div>
-            <!-- Cut ends here -->
+      <h2 id="navitem1">NavItem 1</h2>
+      <h3>Copy Cut Paste</h3>
+      <div class="copycutpaste">
+        <!-- Copy starts here -->
+        <div class="copy">
+          <input
+            type="text"
+            name=""
+            id="copy"
+            value="Click to copy this text"
+          />
+          <button id="copybtn" onclick="jsCopy()">Copy</button>
+        </div>
+        <!-- Copy ends here -->
 
-            <!-- Paste starts here -->
-            <div class="paste">
-                <input type="text" name="" id="paste" value="">
-                <button id="pastebtn" onclick="jsPaste()">Paste</button>
-            </div>
+        <!-- Cut starts here -->
+        <div class="cut">
+          <input type="text" name="" id="cut" value="Click to cut this text" />
+          <button id="cutbtn" onclick="jsCut()">Cut</button>
+        </div>
+        <!-- Cut ends here -->
+
+        <!-- Paste starts here -->
+        <div class="paste">
+          <input type="text" name="" id="paste" value="" />
+          <button id="pastebtn" onclick="jsPaste()">Paste</button>
+        </div>
         <!-- Paste ends here -->
-        </div>
-        
-        
-    
+      </div>
 
-        <h2 id="navitem2">NavItem 2</h2>
-        <div class="title">
-            <h3>Light <span  id="title">Off</span></h3>
-        </div>
-        <div class="lights">
-            <img src="/images/lightoff.png" class="bulb" id="light1">
-            <img src="/images/lightoff.png" class="bulb" id="light2">
-            <img src="/images/lightoff.png" class="bulb" id="light3">
-            <img src="/images/lightoff.png" class="bulb" id="light4">
-            <img src="/images/lightoff.png" class="bulb" id="light5">
-            <img src="/images/lightoff.png" class="bulb" id="light6">
-            <br>
-            <button id="on" onclick="lightBtn(1)">On</button>
-            <button id="off" onclick="lightBtn(0)">Off</button>
-        </div>
+      <h2 id="navitem2">NavItem 2</h2>
+      <div class="title">
+        <h3>Light <span id="title">Off</span></h3>
+      </div>
+      <div class="lights">
+        <img src="/images/lightoff.png" class="bulb" id="light1" />
+        <img src="/images/lightoff.png" class="bulb" id="light2" />
+        <img src="/images/lightoff.png" class="bulb" id="light3" />
+        <img src="/images/lightoff.png" class="bulb" id="light4" />
+        <img src="/images/lightoff.png" class="bulb" id="light5" />
+        <img src="/images/lightoff.png" class="bulb" id="light6" />
+        <br />
+        <button id="on" onclick="lightBtn(1)">On</button>
+        <button id="off" onclick="lightBtn(0)">Off</button>
+      </div>
 
-       
-
-        <h2 id="navitem3">NavItem 3</h2>
-        <div>
-            <h3>Animated Number Counter</h3>
-        </div>
-        <div class="animatedCounter">
-            <div class="totalProject">
-                <p class="atc">Total Project</p>
-                <h4 id="num1"></h4>
-            </div>
-    
-            <div class="totalClient">
-                <p class="atc">Total Client</p>
-                <h4 id="num2"></h4>
-            </div>
-    
-            <div class="totalAchieve">
-                <p class="atc">Total Achieve</p>
-                <h4 id="num3"></h4>
-            </div>
+      <h2 id="navitem3">NavItem 3</h2>
+      <div>
+        <h3>Animated Number Counter</h3>
+      </div>
+      <div class="animatedCounter">
+        <div class="totalProject">
+          <p class="atc">Total Project</p>
+          <h4 id="num1"></h4>
         </div>
 
-        
-
-        <h2 id="navitem4">NavItem 4</h2>
-        <h3 id="cp">Color Picker</h3>
-        <div class="colorpicker" id="cpd">
-            <input type="text" id="hexaNumber">
-            <input type="color" id="color">
+        <div class="totalClient">
+          <p class="atc">Total Client</p>
+          <h4 id="num2"></h4>
         </div>
 
-
-        <h2 id="navitem1">NavItem 5</h2>
-        <h3>Running Car</h3>
-        <img class="carimage" src="/images/car.png" id="carImg" alt="" srcset="">
-        <div class="car">            
-            <button class="startbtn" id="start">Start</button>
-            <button class="stopbtn" id="stop">Stop</button>
+        <div class="totalAchieve">
+          <p class="atc">Total Achieve</p>
+          <h4 id="num3"></h4>
         </div>
-       
+      </div>
+
+      <h2 id="navitem4">NavItem 4</h2>
+      <h3 id="cp">Color Picker</h3>
+      <div class="colorpicker" id="cpd">
+        <input type="text" id="hexaNumber" />
+        <input type="color" id="color" />
+      </div>
+
+      <h2 id="navitem1">NavItem 5</h2>
+      <h3>Running Car</h3>
+      <img
+        class="carimage"
+        src="/images/car.png"
+        id="carImg"
+        alt=""
+        srcset=""
+      />
+      <div class="car">
+        <button class="startbtn" id="start">Start</button>
+        <button class="stopbtn" id="stop">Stop</button>
+      </div>
+
+      <h2 id="navitem5">Other useful things</h2>
+      <h3>Show/Hide Password</h3>
+      <div class="shp">
+        <form action="">
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+          />
+          <br />
+          <br />
+          <input type="checkbox" onclick="myPass()" /><span>Show passowrd</span>
+        </form>
+      </div>
+
+      <h3>Image Slider</h3>
+      <div class="imageSlider">
+        <img src="/images/slider/lux1.jpg" class="imgslider" id="myImage" />
+      </div>
+
+      <h3>POPUP Modal</h3>
+      <div class="modal">
+        <div class="modal-title">
+          <h2>Modal</h2>
+        </div>
+        <div class="modal-body">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
+            eaque incidunt dignissimos suscipit, praesentium totam est esse ab
+            cupiditate non ex sunt vero laudantium consequuntur at cum fugit id
+            enim! Iure rem maiores in dicta est fuga accusantium? Id ad cum
+            magni modi, dolorum cupiditate facilis maiores, doloremque dolores
+            incidunt soluta pariatur nam explicabo voluptas? Corporis,
+            consectetur ducimus. Quas praesentium voluptate id eos facere minus
+            autem in ratione distinctio perferendis?
+          </p>
+        </div>
+      </div>
     </div>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
