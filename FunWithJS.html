@@ -19,46 +19,87 @@
             </div>
         </div>
         <h1>SCROLL DOWN TO SEE THE COLOR OF NAVBAR CHANGING FROM WHITE TO GREEN</h1>
+        
         <hr>
+
         <h2 id="home">NavItem 1</h2>
         <h3>Copy Cut Paste</h3>
+        <div class="copycutpaste">
+            <!-- Copy starts here -->
+            <div class="copy">
+                <input type="text" name="" id="copy" value="Click to copy this text">
+                <button id="copybtn" onclick="jsCopy()">Copy</button>
+            </div>
+            <!-- Copy ends here -->
+            
+            <!-- Cut starts here -->
+            <div class="cut">
+                <input type="text" name="" id="cut" value="Click to cut this text">
+                <button id="cutbtn" onclick="jsCut()">Cut</button>
+            </div>
+            <!-- Cut ends here -->
 
-        <!-- Copy starts here -->
-        <div class="copy">
-            <input type="text" name="" id="copy" value="Click to copy this text">
-            <button id="copybtn" onclick="jsCopy()">Copy</button>
-        </div>
-        <!-- Copy ends here -->
-        
-        <!-- Cut starts here -->
-        <div class="cut">
-            <input type="text" name="" id="cut" value="Click to cut this text">
-            <button id="cutbtn" onclick="jsCut()">Cut</button>
-        </div>
-        <!-- Cut ends here -->
-
-        <!-- Paste starts here -->
-        <div class="paste">
-            <input type="text" name="" id="paste" value="">
-            <button id="pastebtn" onclick="jsPaste()">Paste</button>
-        </div>
+            <!-- Paste starts here -->
+            <div class="paste">
+                <input type="text" name="" id="paste" value="">
+                <button id="pastebtn" onclick="jsPaste()">Paste</button>
+            </div>
         <!-- Paste ends here -->
+        </div>
+        
         
         <hr>
+
         <h2 id="service">NavItem 2</h2>
-       
+        <div class="title">
+            <h3>Light <span  id="title">Off</span></h3>
+        </div>
+        <div class="lights">
+        <img src="/images/lightoff.png" class="bulb" id="light1">
+        <img src="/images/lightoff.png" class="bulb" id="light2">
+        <img src="/images/lightoff.png" class="bulb" id="light3">
+        <img src="/images/lightoff.png" class="bulb" id="light4">
+        <img src="/images/lightoff.png" class="bulb" id="light5">
+        <img src="/images/lightoff.png" class="bulb" id="light6">
+        <br>
+        <button id="on" onclick="lightBtn(1)">On</button>
+        <button id="off" onclick="lightBtn(0)">Off</button>
+        </div>
 
         <hr>
+
         <h2 id="about">NavItem 3</h2>
-        
+        <div>
+            <h3>Animated Number Counter</h3>
+        </div>
+        <div class="animatedCounter">
+            <div class="totalProject">
+                <p class="atc">Total Project</p>
+                <h4 id="num1"></h4>
+            </div>
+    
+            <div class="totalClient">
+                <p class="atc">Total Client</p>
+                <h4 id="num2"></h4>
+            </div>
+    
+            <div class="totalAchieve">
+                <p class="atc">Total Achieve</p>
+                <h4 id="num3"></h4>
+            </div>
+        </div>
 
         <hr>
+
         <h2 id="contact">NavItem 4</h2>
+        <h3 id="cp">Color Picker</h3>
+        <div class="colorpicker" id="cpd">
+            <input type="text" id="hexaNumber">
+            <input type="color" id="color">
+
+        </div>
        
     </div>
-
-    
-
     <script src="main.js"></script>
 </body>
 </html>
