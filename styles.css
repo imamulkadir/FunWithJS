@@ -50,6 +50,15 @@
    text-align: center;
  }
 
+ .colorpicker {
+   width: 500px;
+   height: 400px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   
+ }
+
 
  .copy, .cut, .paste {
    margin: 10px 0 10px 0;
@@ -57,11 +66,12 @@
 
  #copybtn, #cutbtn, #pastebtn {
    font-size: 1.5rem;
-   border: 1px solid yellowgreen;
-   padding: 5px;
-   background-color: aqua;
-   color: darkblue;
+   border: none;
+   background-color: green;
+   color: white;
+   padding: 15px;
    border-radius: 10px;
+   cursor: pointer;
  }
 
 input {
@@ -69,12 +79,6 @@ input {
    padding: 5px;
    border-radius: 10px;
    border: 1px solid aqua;
-}
-
-hr {
-   margin-top: 25px;
-   margin-bottom: 15px;
-   width: 70%;
 }
 
  .navbar {
@@ -120,6 +124,7 @@ hr {
    padding: 15px;
    border-radius: 10px;
    margin-right: 50px;
+   cursor: pointer;
 }
 
 #off {
@@ -129,6 +134,7 @@ hr {
    border: none;
    padding: 15px;
    border-radius: 10px;
+   cursor: pointer;
 }
 
 .animatedCounter {
@@ -170,4 +176,34 @@ hr {
    background-color: red !important;
    color: aliceblue;
    padding: 10px 20px;
+}
+
+.car {
+   text-align: center;
+}
+
+.carimage {
+   width: 200px;
+   height: 200px;
+}
+
+.startbtn {
+   background-color: green;
+   color: white;
+   font-size: 2.5rem;
+   border: none;
+   padding: 15px;
+   border-radius: 10px;
+   margin-right: 50px;
+   cursor: pointer;
+}
+
+.stopbtn {
+   background-color: red;
+   color: white;
+   font-size: 2.5rem;
+   border: none;
+   padding: 15px;
+   border-radius: 10px;
+   cursor: pointer;
 }

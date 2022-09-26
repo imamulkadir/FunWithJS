@@ -123,7 +123,7 @@ window.onscroll = () => {scrollNavbar()};
             hexanumber.value = inputColor;
             document.getElementById("cp").style.color = inputColor;
 
-            document.body.style.backgroundColor = inputColor;
+            document.getElementById("cpd").style.backgroundColor = inputColor;
         })
 
 
@@ -136,16 +136,40 @@ window.onscroll = () => {scrollNavbar()};
             item.classList.add("activeNavbar");
 
             // Selecting all the navbar a elements
-            var prod = document.querySelectorAll('a');
+            var prods = document.querySelectorAll('a');
 
             // Removing active class if prod id and link id does not match
-            prod.forEach(function(prod){
+            prods.forEach(function(prod){
                 if(prod.id != id){
                     prod.classList.remove("activeNavbar");
                 }
             })
         }
-                
+
+        // Racing car
+        
+        var carImg = document.getElementById("carImg");
+        var startBtn = document.getElementById("start");
+        var stoptBtn = document.getElementById("stop");
+
+        var m = 0;
+
+        startBtn.addEventListener('click', function(){
+            var carStart = setInterval(run, 10);
+
+            function run() {
+                // 1screen.width
+                if (m == 1700){
+                    clearInterval(carStart);
+                    m = 0;
+                }
+                else {
+                    m += 5;
+                    carImg.style.marginLeft = m+'px';
+                }
+            }
+        })
+
             
         
         
