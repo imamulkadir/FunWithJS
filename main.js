@@ -199,7 +199,7 @@ window.onscroll = () => {scrollNavbar()};
 
         function setSlide(){
             count_index++;
-            console.log(count_index);
+            
             if(count_index >= image.length){
                 count_index = 0;
                 my_img.src = "./images/slider/"+image[count_index];
@@ -212,6 +212,21 @@ window.onscroll = () => {scrollNavbar()};
         Window.onload = setSlide();
 
     
+        // POPUP Modal
+
+        var openBtn = document.getElementById("openBtn");
+        var closeBtn = document.getElementById("closeBtn");
+        var modalDiv = document.getElementById("modal");
+        openBtn.addEventListener('click', function(){
+            modalDiv.classList.add("modalshow");
+        });
+
+        closeBtn.addEventListener('click', function(){
+            modalDiv.classList.remove("modalshow");
+        })
         
+       
+
+
         
 

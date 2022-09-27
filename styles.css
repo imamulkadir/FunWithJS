@@ -1,6 +1,6 @@
  * {
     margin: 0 auto;
-    padding: 0 0 50px 0;
+    padding: 0;
  }
 
  .container {
@@ -187,7 +187,7 @@ input {
    height: 200px;
 }
 
-.startbtn {
+.startbtn, .open {
    background-color: green;
    color: white;
    font-size: 2.5rem;
@@ -196,9 +196,10 @@ input {
    border-radius: 10px;
    margin-right: 50px;
    cursor: pointer;
+   box-shadow: 5px 4px 10px black;
 }
 
-.stopbtn {
+.stopbtn, .close {
    background-color: red;
    color: white;
    font-size: 2.5rem;
@@ -206,6 +207,7 @@ input {
    padding: 15px;
    border-radius: 10px;
    cursor: pointer;
+   box-shadow: 5px 4px 10px black;
 }
 
 
@@ -220,12 +222,33 @@ span {
 }
 
 
-.modal {
+.modal{
    width: 500px;
    height: 400px;
    background-color: darkblue;
    color: white;
    border-radius: 10px;
    box-shadow: 5px 4px 10px black;
+   padding: 10px;
+   opacity: 0;
+
+}
+
+.modalshow{
+   opacity: 1;
+  
+}
+
+.modal-footer {
+   text-align: center;
+}
+
+.modal-open {
+   text-align: center;
+}
+.open {
+   margin-bottom: 10rem;
+   margin-top: 1rem;
    
 }
+
