@@ -80,9 +80,9 @@
       </div>
 
       <h2 id="navitem3">NavItem 3</h2>
-      <div>
-        <h3>Animated Number Counter</h3>
-      </div>
+
+      <!-- Animated Number Counter -->
+      <h3>Animated Number Counter</h3>
       <div class="animatedCounter">
         <div class="totalProject">
           <p class="atc">Total Project</p>
@@ -101,6 +101,8 @@
       </div>
 
       <h2 id="navitem4">NavItem 4</h2>
+
+      <!-- Color Picker -->
       <h3 id="cp">Color Picker</h3>
       <div class="colorpicker" id="cpd">
         <input type="text" id="hexaNumber" />
@@ -108,6 +110,8 @@
       </div>
 
       <h2 id="navitem1">NavItem 5</h2>
+
+      <!-- Running Car -->
       <h3>Running Car</h3>
       <img
         class="carimage"
@@ -122,6 +126,8 @@
       </div>
 
       <h2 id="navitem5">Other useful things</h2>
+
+      <!-- Show/Hide Password -->
       <h3>Show/Hide Password</h3>
       <div class="shp">
         <form action="">
@@ -136,11 +142,13 @@
         </form>
       </div>
 
+      <!-- Image Slider -->
       <h3>Image Slider</h3>
       <div class="imageSlider">
         <img src="/images/slider/lux1.jpg" class="imgslider" id="myImage" />
       </div>
 
+      <!-- POPUP Modal  -->
       <h3>POPUP Modal</h3>
       <div class="modal" id="modal">
         <div class="modal-title">
@@ -169,6 +177,36 @@
       <div class="modal-open">
         <button class="open" id="openBtn">Open</button>
       </div>
+
+      <!-- Zoom image on click -->
+      <h3>Zoom image on click</h3>
+      <div class="katDiv">
+        <div class="katImg">
+          <img src="./images/kat/kat1.jpg" id="kat">
+        </div>
+        <img src="./images/kat/kat1.jpg" id="katOuter" onclick="changeImg1()"">
+        <img src="./images/kat/kat2.jpg" id="katOuter" onclick="changeImg2()">
+        <img src="./images/kat/kat3.jpg" id="katOuter" onclick="changeImg3()">
+        <img src="./images/kat/kat4.jpg" id="katOuter" onclick="changeImg4()">
+      </div>
+
+      <!-- ToDo List -->
+      <h3>ToDo List</h3>
+      <div class="todoList">
+        <div class="inputItem">
+          <input type="text" id="input">
+          <button id="addItem">Add</button>
+        </div>
+      </div>
+        <div class="todo-item-div">
+          <h3>ToDo Item</h3>
+          <ol id="olItem">
+            <!-- <li>Zed</li>
+            <li>Miss Fortune</li>
+            <li> Master Yi</li> -->
+          </ol>
+        </div>
+      
     </div>
     <script src="main.js"></script>
   </body>
