@@ -258,5 +258,40 @@ addItem.addEventListener('click', function(){
 });
 
 
+// Short Quiz
+
+var submit = document.getElementById("submit");
+
+submit.addEventListener('click', function(){
+    var q1 = document.getElementById("q1").checked;
+    var q2 = document.getElementById("q2").checked;
+    var q3 = document.getElementById("q3").checked;
+    var q4 = document.getElementById("q4").checked;
+    var q5 = document.getElementById("q5").checked;
+
+    var count5 = 0;
+
+    if(q1){
+        count5++;
+    }
+    if(q2){
+        count5++;
+    }
+    if(q3){
+        count5++;
+    }
+    if(q4){
+        count5++;
+    }
+    if(q5){
+        count5++;
+    }
+
+    alert('You scored: '+count5+' out of 5!');
+});
+
+
+
+
         
 

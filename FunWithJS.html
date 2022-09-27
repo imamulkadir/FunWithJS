@@ -116,10 +116,7 @@
       <img
         class="carimage"
         src="/images/car.png"
-        id="carImg"
-        alt=""
-        srcset=""
-      />
+        id="carImg">
       <div class="car">
         <button class="startbtn" id="start">Start</button>
         <button class="stopbtn" id="stop">Stop</button>
@@ -184,7 +181,7 @@
         <div class="katImg">
           <img src="./images/kat/kat1.jpg" id="kat">
         </div>
-        <img src="./images/kat/kat1.jpg" id="katOuter" onclick="changeImg1()"">
+        <img src="./images/kat/kat1.jpg" id="katOuter" onclick="changeImg1()">
         <img src="./images/kat/kat2.jpg" id="katOuter" onclick="changeImg2()">
         <img src="./images/kat/kat3.jpg" id="katOuter" onclick="changeImg3()">
         <img src="./images/kat/kat4.jpg" id="katOuter" onclick="changeImg4()">
@@ -198,15 +195,59 @@
           <button id="addItem">Add</button>
         </div>
       </div>
-        <div class="todo-item-div">
-          <h3>ToDo Item</h3>
-          <ol id="olItem">
-            <!-- <li>Zed</li>
-            <li>Miss Fortune</li>
-            <li> Master Yi</li> -->
-          </ol>
-        </div>
+      <div class="todo-item-div">
+        <h3>ToDo Item</h3>
+        <ol id="olItem">
+          <!-- <li>Zed</li>
+          <li>Miss Fortune</li>
+          <li> Master Yi</li> -->
+        </ol>
+      </div>
       
+      <!-- Quiz -->
+      <h3>Short Quiz</h3>
+      <div class="quizDiv">
+        <form action="">
+          <p class="quizP">
+            Q1. Who is the sister of Garen?<br>
+            <input type="radio"name="q1">Morgana<br>
+            <input type="radio"name="q1" id="q1">Lux<br>
+            <input type="radio"name="q1">Akali<br>
+            <input type="radio"name="q1">Katarina<br>
+          </p>
+          <p class="quizP">
+            Q2. Who is Cupcake?<br>
+            <input type="radio"name="q2" id="q2">Caitlyn<br>
+            <input type="radio"name="q2">Vi<br>
+            <input type="radio"name="q2">Akali<br>
+            <input type="radio"name="q2">Fiora<br>
+          </p>
+          <p class="quizP">
+            Q3. When the first dragon spawn?<br>
+            <input type="radio"name="q3">At 5 minutes mark<br>
+            <input type="radio"name="q3">At 5:30 minutes mark<br>
+            <input type="radio"name="q3" id="q3">At 6 minutes mark<br>
+            <input type="radio"name="q3">At 6:30 minutes mark<br>
+          </p>
+          <p class="quizP">
+            Q4. Who made Blitzcrank?<br>
+            <input type="radio"name="q4">Blitzcrank<br>
+            <input type="radio"name="q4" id="q4">Heimerdinger<br>
+            <input type="radio"name="q4">Victor<br>
+            <input type="radio"name="q4">Nautilus<br>
+          </p>
+          <p class="quizP">
+            Q5. Who is Lucian's wife?<br>
+            <input type="radio"name="q5">Morgana<br>
+            <input type="radio"name="q5" id="q5">Senna<br>
+            <input type="radio"name="q5">Akali<br>
+            <input type="radio"name="q5">Katarina<br>
+          </p>
+          <button id="submit">Submit</button>
+        </form>
+      </div>
+
+
     </div>
     <script src="main.js"></script>
   </body>
